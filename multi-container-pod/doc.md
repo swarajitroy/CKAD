@@ -2,10 +2,10 @@
 ---
 
 * Understand Multi Container Pod Design 
-  ** InitContainer pattern
-  ** Sidecar 
-  ** Ambassador/Proxy
-  ** Adapter
+   ** InitContainer pattern
+   ** Sidecar 
+   ** Ambassador/Proxy
+   ** Adapter
 
 ## InitContainer
 ---
