@@ -3,7 +3,7 @@
 
 * [01. Understand Services](#01-understand-services)
    * [01.A Cluster IP](#01a--cluster-ip)
-   * 01.B NodePort
+   * [01.B NodePort](#01b--nodeport)
    * 01.C Load Balancer
    * 01.D Ingress Controller 
    * 01.E Ingress
