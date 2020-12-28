@@ -14,6 +14,10 @@
 ## 02. Demonstrate basic understanding of NetworkPolicies
 ---
 
+Please be adviced, the desktop Kubernetes like MiniKube does not support Network Policies. Please test all the Network Policy recipes on a diffent K8S cluster.
+
+
+
 ### 02.A Deny all traffic to a pod
 ---
 
