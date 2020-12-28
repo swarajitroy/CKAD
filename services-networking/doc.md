@@ -24,7 +24,37 @@
 | 03 | Test Setup | Deploy a busybox pod and test via wget or curl | 
 
 
- 
+ ```
+Swarajits-MacBook-Air:GITOPS_HOME swarajitroy$ kubectl run swararoy-application --image=nginx -l app=web
+deployment.apps/swararoy-application created
+
+Swarajits-MacBook-Air:GITOPS_HOME swarajitroy$  kubectl get pod -l app=web -o wide
+NAME                                    READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+swararoy-application-547d996cc9-vkws9   1/1     Running   0          3m1s   172.17.0.16   minikube   <none>           <none>
+
+```
+
+This additionally creates a replicaset and deployment automatically. 
+
+Now - lets test. Use https://kubernetes.io/docs/reference/kubectl/cheatsheet/ - the Kubernetes cheet sheet, 
+
+```
+kubectl run -i --tty busybox --image=busybox -- sh
+/ # wget -qO- http://172.17.0.16:80
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+
+
+```
 
 
 
