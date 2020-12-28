@@ -10,6 +10,9 @@
    * [02.A Deny all traffic to a pod](#02a-deny-all-traffic-to-a-pod)
 
 
+## 01. Understand Services 
+---
+
 
 ## 02. Demonstrate basic understanding of NetworkPolicies
 ---
