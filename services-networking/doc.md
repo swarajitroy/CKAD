@@ -18,6 +18,7 @@
 ---
 
 | ID | Task | Description |
+| ----------- | ----------- | -------|
 | 01 | Create Application | Create a Pod with label app=web - this could be a pod, or a replicaset or deployment |
 | 02 | Apply NetworkPolicy| The network policy will reject all traffic incoming to the application pods |
 | 03 | Test Setup | Deploy a busybox pod and test via wget or curl | 
