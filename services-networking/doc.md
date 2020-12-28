@@ -53,6 +53,9 @@ kubectl run -i --tty busybox --image=busybox -- sh
     }
 </style>
 
+Once we come out of the busybox session, we can always attach it back as long as pod is running.
+
+Session ended, resume using 'kubectl attach busybox-6c446876c6-867wz -c busybox -i -t' command when the pod is running
 
 ```
 
