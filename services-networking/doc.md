@@ -67,6 +67,41 @@ Session ended, resume using 'kubectl attach busybox-6c446876c6-867wz -c busybox 
 
 We need to design a network policy now. We have to create a Network policy on Pods which has label app=web using a PodSelector contruct, and as we have to control the incoming traffic to this pod, we need to select the ingress policy. The best way to do this to have an ingress policy blank - that way, all traffic gets stopped. As Network Policy creation is not available via Kubernetes imperative command, we need to get a good YAML from Kubernetes website.
 
+```
+Swarajits-MacBook-Air:netpol swarajitroy$ cat web-deny-all.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: web-deny-all
+spec:
+  podSelector:
+    matchLabels:
+      app: web
+  ingress: []
+ 
+Swarajits-MacBook-Air:netpol swarajitroy$ kubectl apply -f web-deny-all.yaml
+networkpolicy.networking.k8s.io/web-deny-all created
+
+Swarajits-MacBook-Air:netpol swarajitroy$ kubectl get netpol
+NAME           POD-SELECTOR   AGE
+web-deny-all   app=web        23s
+
+Swarajits-MacBook-Air:netpol swarajitroy$ kubectl describe netpol web-deny-all
+Name:         web-deny-all
+Namespace:    default
+Created on:   2020-12-28 11:45:20 +0530 IST
+Labels:       <none>
+Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+                {"apiVersion":"networking.k8s.io/v1","kind":"NetworkPolicy","metadata":{"annotations":{},"name":"web-deny-all","namespace":"default"},"spe...
+Spec:
+  PodSelector:     app=web
+  Allowing ingress traffic:
+    <none> (Selected pods are isolated for ingress connectivity)
+  Allowing egress traffic:
+    <none> (Selected pods are isolated for egress connectivity)
+  Policy Types: Ingress
+
+```
 
 ## Links
 ---
