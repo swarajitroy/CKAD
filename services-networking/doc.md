@@ -6,7 +6,7 @@
    * NodePort
    * Load Balancer
    
-* 02. Demonstrate basic understanding of NetworkPolicies
+* [02. Demonstrate basic understanding of NetworkPolicies](#02-demonstrate-basic-understanding-of-networkpolicies)
    * [02.A Deny all traffic to a pod](#02a-deny-all-traffic-to-a-pod)
 
 
