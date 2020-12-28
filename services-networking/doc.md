@@ -62,8 +62,11 @@ Session ended, resume using 'kubectl attach busybox-6c446876c6-867wz -c busybox 
 
 ```
 
-#### 02.A.0B Apply NetworkPolicy
+#### 02.A.02 Apply NetworkPolicy
 ---
+
+We need to design a network policy now. We have to create a Network policy on Pods which has label app=web using a PodSelector contruct, and as we have to control the incoming traffic to this pod, we need to select the ingress policy. The best way to do this to have an ingress policy blank - that way, all traffic gets stopped. As Network Policy creation is not available via Kubernetes imperative command, we need to get a good YAML from Kubernetes website.
+
 
 ## Links
 ---
