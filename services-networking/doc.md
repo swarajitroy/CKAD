@@ -1,10 +1,12 @@
 # Services & Networking
 ---
 
-* Understand Services
-   * Cluster IP
-   * NodePort
-   * Load Balancer
+* [01. Understand Services](#01-understand-services)
+   * 01.A Cluster IP
+   * 01.B NodePort
+   * 01.C Load Balancer
+   * 01.D Ingress Controller 
+   * 01.E Ingress
    
 * [02. Demonstrate basic understanding of NetworkPolicies](#02-demonstrate-basic-understanding-of-networkpolicies)
    * [02.A Deny all traffic to a pod](#02a-deny-all-traffic-to-a-pod)
@@ -13,6 +15,20 @@
 ## 01. Understand Services 
 ---
 
+## 01.A  Cluster IP
+---
+
+## 01.B  NodePort
+---
+
+## 01.C  Load Balancer
+---
+
+## 01.D  Ingress Controller
+---
+
+## 01.E  Ingress
+---
 
 ## 02. Demonstrate basic understanding of NetworkPolicies
 ---
