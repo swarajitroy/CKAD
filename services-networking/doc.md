@@ -103,6 +103,18 @@ Spec:
 
 ```
 
+#### 02.A.03 Test Setup 
+---
+
+```
+
+Swarajits-MacBook-Air:netpol swarajitroy$ kubectl attach busybox-6c446876c6-867wz -c busybox -i -t
+If you don't see a command prompt, try pressing enter.
+/ #
+
+
+```
+
 ## Links
 ---
 
