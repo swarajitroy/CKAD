@@ -24,6 +24,9 @@
 | 03 | Test Setup | Deploy a busybox pod and test via wget or curl | 
 
 
+#### 02.A.01 Create Application
+---
+
  ```
 Swarajits-MacBook-Air:GITOPS_HOME swarajitroy$ kubectl run swararoy-application --image=nginx -l app=web
 deployment.apps/swararoy-application created
@@ -59,7 +62,8 @@ Session ended, resume using 'kubectl attach busybox-6c446876c6-867wz -c busybox 
 
 ```
 
-
+#### 02.A.0B Apply NetworkPolicy
+---
 
 ## Links
 ---
